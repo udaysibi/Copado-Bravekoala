@@ -1,6 +1,6 @@
-trigger triggeracc on Account (before insert) {
+trigger triggeracc on Account (before update,before insert) {
 
-    if(trigger.isbefore)
+     if(trigger.isbefore && trigger.isupdate)
     {
         //
     }
